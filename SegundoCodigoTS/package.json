@@ -1,0 +1,12 @@
+{
+  "name": "segundocodigots",
+  "version": "1.0.0",
+  "description": "node index.js\r # Adicionar script no package.json\r \"start\": \"npx tsc && node ./build/index.js\"\r # Criar arquivo de configuração\r npx tsc --init\r # Alterações\r \"target\": \"es6\",\r \"module\": \"commonjs\",\r \"sourceMap\": true,\r \"outDir\": \"./build\",\r \"rootDir\": \"./src\",\r \"removeComments\": true,\r \"noImplicitAny\": true,\r # Transpilar arquivo .ts\r npx tsc\r # Rodar script\r npm start",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

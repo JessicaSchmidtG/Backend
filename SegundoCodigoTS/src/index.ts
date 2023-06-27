@@ -1,1 +1,1 @@
-console.log("oiii");
+console.log("Segundo código TS");

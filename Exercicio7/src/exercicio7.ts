@@ -6,13 +6,13 @@ console.log("Exercicio 07");
 function apresentation(name: string, birthDate: string): void {
     const nameApresentation: string = name;
     let day = birthDate.split("/");
-    let month: number = day[1];
+    let month: number = Number(day[1]);
     let ano = day[2];
     let monthDescription;
     if(month == 01){
         monthDescription = "January";
     }
-    else if(month == 02){
+    else if(month == 2){
         monthDescription = 'February';
     }
     else if(month == 03){

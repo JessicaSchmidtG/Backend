@@ -3,51 +3,50 @@ console.log("Exercicio 07");
 //retornar string no formato;
 //Olá me chamo $(nome), nasci no dia (dia) do mes (mes) do ano de (ano).
 
-function apresentation(name: string, birthDate: string): void {
+function apresentation(name: string, birthDate: string): string {
     const nameApresentation: string = name;
     let day = birthDate.split("/");
-    let month: number = Number(day[1]);
+    let month = day[1];
     let ano = day[2];
-    let monthDescription;
-    if(month == 01){
-        monthDescription = "January";
+    
+    if(month == "01"){
+        month = "January";
     }
-    else if(month == 2){
-        monthDescription = 'February';
+    else if(month == "02"){
+        month = 'February';
     }
-    else if(month == 03){
-        monthDescription = 'March';
+    else if(month == "03"){
+        month = 'March';
     }
-    else if(month == 04){
-        monthDescription = 'April';
+    else if(month == "04"){
+        month = 'April';
     }
-    else if(month == 05){
-        monthDescription = 'May';
+    else if(month == "05"){
+        month = 'May';
     }
-    else if(month == 06){
-        monthDescription = 'June';
+    else if(month == "06"){
+        month = 'June';
     }
-    else if(month == 07){
-        monthDescription = 'July';
+    else if(month == "07"){
+        month = 'July';
     }
-    else if(month == 08){
-        monthDescription = 'August';
+    else if(month == "08"){
+        month = 'August';
     }
-    else if(month == 09){
-        monthDescription = 'September';
+    else if(month == "09"){
+        month = 'September';
     }
-    else if(month == 10){
-        monthDescription = 'October';
+    else if(month == "10"){
+        month = 'October';
     }
-    else if(month == 11){
-        monthDescription = 'November';
+    else if(month == "11"){
+        month = 'November';
     }
-    else if(month == 12){
-        monthDescription = 'December';
+    else if(month == "12"){
+        month = 'December';
     }
     
-    return console.log(`Olá, me chamo ${nameApresentation}, nasci no dia ${day[0]}, do mês ${monthDescription} do ano ${day[2]}.`);
-
+    return `Hi, My name is ${nameApresentation}, I was born in ${day[0]} of ${month} in the year ${day[2]}.`;
 }
 
-apresentation('Jéssica', "18/05/1992");
+console.log(apresentation('Jéssica', "18/05/1992"));

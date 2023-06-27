@@ -1,0 +1,1 @@
+console.log("Exercicio 6 - Aula que faltei");

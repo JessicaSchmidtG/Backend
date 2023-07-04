@@ -33,3 +33,4 @@ function calculateDebits() {
 }
 
 console.log(getNegativeAmount(users));
+

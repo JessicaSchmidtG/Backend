@@ -13,7 +13,7 @@ let romanos = [
     { symbol: "IX", value: 9 },
     { symbol: "V", value: 5 },
     { symbol: "IV", value: 4 },
-    { symbol: "i", value: 1 },
+    { symbol: "I", value: 1 },
 ];
 function convert(num) {
     let numRom = " ";
@@ -25,5 +25,5 @@ function convert(num) {
     }
     return numRom;
 }
-console.log(convert(1990));
+console.log(convert(1992));
 //# sourceMappingURL=exercicio14.js.map
